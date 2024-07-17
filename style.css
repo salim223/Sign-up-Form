@@ -1,0 +1,168 @@
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    width: 1200px;
+    height: 700px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.leftSide {
+    background-image: url('background_SUF.jpg');
+    flex: 2;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; 
+}
+
+.logoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: Norse, serif;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); 
+}
+
+.logoBox img {
+    height: 8vh;
+}
+
+.logoBox h1 {
+    font-size: 4rem;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.leftSide p{
+	position: relative;
+	top: 45%;
+	margin: 0 auto;
+}
+
+.leftSide a,
+.leftSide p {
+	color: white;
+	font-size: 0.8rem;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 3;
+    background-color: whitesmoke;
+
+}
+
+#quote {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #000; 
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    justify-content: center;
+
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.information p {
+    padding-left: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #484756; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.left-form,
+.right-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.validate {
+    display: flex;
+    justify-items: left;
+	gap: 1.5rem;
+    padding-left: 25px;
+    padding-top: 40px;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.validate a {
+	color: #596D48;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	padding: 0.7rem;
+	border-radius: 0.3rem;
+	width: 10rem;
+	color: white;
+	background-color: #596D48;
+	font-weight: bolder;
+}
+
+label {
+	font-family: 'Open Sans';
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+input {
+	border: 1px solid #E5E7EB;
+    width: 225px;
+    height: 1.2rem;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
